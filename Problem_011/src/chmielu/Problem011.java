@@ -1,4 +1,4 @@
-package Chmielu;
+package chmielu;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Chmielu;
+package chmielu;
 
 /**
  * Created by kuba on 06.02.15.
@@ -11,6 +11,8 @@ public class Problem012 {
   public static final int BIGGEST_PRIME = 3572;
 
   public static int[] primes = new int[NR_PRIMES];
+
+
 
   public static void main(String[] args) {
     setupPrimes();
@@ -54,6 +56,12 @@ public class Problem012 {
     }
   }
 
+  /**
+   * Finds the number of divisors of given number.
+   * Also does prime factorization using prievously setup prime array.
+   * @param number number.
+   * @return number of divisors.
+   */
   public static int nDivisors(int number) {
     int[] primesExponents = new int[NR_PRIMES];
 //    System.out.println("Number " + number + " =");
