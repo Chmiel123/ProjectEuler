@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/Problem_015/Problem_015.iml" filepath="$PROJECT_DIR$/Problem_015/Problem_015.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem_016/Problem_016.iml" filepath="$PROJECT_DIR$/Problem_016/Problem_016.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem_017/Problem_017.iml" filepath="$PROJECT_DIR$/Problem_017/Problem_017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problem_018/Problem_018.iml" filepath="$PROJECT_DIR$/Problem_018/Problem_018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problem_019/Problem_019.iml" filepath="$PROJECT_DIR$/Problem_019/Problem_019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problem_020/Problem_020.iml" filepath="$PROJECT_DIR$/Problem_020/Problem_020.iml" />
       <module fileurl="file://$PROJECT_DIR$/Project_Euler.iml" filepath="$PROJECT_DIR$/Project_Euler.iml" />
     </modules>
   </component>
