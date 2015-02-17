@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Problem_011/Problem_011.iml" filepath="$PROJECT_DIR$/Problem_011/Problem_011.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_012/Problem_012.iml" filepath="$PROJECT_DIR$/Problem_012/Problem_012.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_013/Problem_013.iml" filepath="$PROJECT_DIR$/Problem_013/Problem_013.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_014/Problem_014.iml" filepath="$PROJECT_DIR$/Problem_014/Problem_014.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_015/Problem_015.iml" filepath="$PROJECT_DIR$/Problem_015/Problem_015.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_016/Problem_016.iml" filepath="$PROJECT_DIR$/Problem_016/Problem_016.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_017/Problem_017.iml" filepath="$PROJECT_DIR$/Problem_017/Problem_017.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_018/Problem_018.iml" filepath="$PROJECT_DIR$/Problem_018/Problem_018.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_019/Problem_019.iml" filepath="$PROJECT_DIR$/Problem_019/Problem_019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_020/Problem_020.iml" filepath="$PROJECT_DIR$/Problem_020/Problem_020.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_021/Problem_021.iml" filepath="$PROJECT_DIR$/Problem_021/Problem_021.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_022/Problem_022.iml" filepath="$PROJECT_DIR$/Problem_022/Problem_022.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Problem_023/Problem_023.iml" filepath="$PROJECT_DIR$/Problem_023/Problem_023.iml" />
       <module fileurl="file://$PROJECT_DIR$/Project_Euler.iml" filepath="$PROJECT_DIR$/Project_Euler.iml" />
     </modules>
   </component>
