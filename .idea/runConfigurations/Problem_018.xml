@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Problem_018" type="Application" factoryName="Application">
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    <option name="MAIN_CLASS_NAME" value="chmiel.Problems.Problem018" />
+    <option name="MAIN_CLASS_NAME" value="chmiel.problems.Problem018" />
     <option name="VM_PARAMETERS" value="" />
     <option name="PROGRAM_PARAMETERS" value="inputs/P_018.txt" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />

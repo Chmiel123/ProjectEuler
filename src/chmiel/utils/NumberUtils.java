@@ -88,6 +88,18 @@ public class NumberUtils {
     }
     return result;
   }
+  /**
+   * Utility method to turn an ArrayList of Longs to plain array of longs.
+   * @param arrayList arrayList of Longs.
+   * @return array of longs.
+   */
+  public static long[] ArrayListLongToArrayLong(ArrayList<Long> arrayList) {
+    long[] result = new long[arrayList.size()];
+    for (int i = 0; i < arrayList.size(); i++) {
+      result[i] = arrayList.get(i);
+    }
+    return result;
+  }
 
   /**
    * Does prime factorization using prievously setup prime array.

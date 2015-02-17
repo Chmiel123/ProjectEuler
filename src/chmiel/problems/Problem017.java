@@ -1,4 +1,4 @@
-package chmiel.Problems;
+package chmiel.problems;
 
 import chmiel.utils.Appendable;
 import chmiel.utils.IntAppend;

@@ -1,4 +1,4 @@
-package chmiel.Problems;
+package chmiel.problems;
 
 /**
  * Created by kuba on 09.02.15.

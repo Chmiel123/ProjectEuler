@@ -1,4 +1,4 @@
-package chmiel.Problems;
+package chmiel.problems;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
