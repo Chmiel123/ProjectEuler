@@ -59,7 +59,7 @@ public class NumberUtils {
     }
     int nthPrime = 2;
     for (int n = 0; true; n++) {
-      for (int nthPrimeMultiple = nthPrime*nthPrime; nthPrimeMultiple < N; nthPrimeMultiple+=nthPrime) {
+      for (int nthPrimeMultiple = nthPrime*nthPrime; nthPrimeMultiple < N && nthPrimeMultiple >= 0; nthPrimeMultiple+=nthPrime) {
         naturals[nthPrimeMultiple] = 0;
       }
       primes.add(n, nthPrime);
