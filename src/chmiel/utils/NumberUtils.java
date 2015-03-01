@@ -18,6 +18,20 @@ public class NumberUtils {
       out.print(array[i]+", ");
     }
   }
+
+  /**
+   * Get an array of decimal digits of a number.
+   * @param number number.
+   * @return array of digits.
+   */
+  public static int[] getDigits(int number) {
+    ArrayList<Integer> digits = new ArrayList<Integer>();
+    while (number > 0) {
+      digits.add(number % 10);
+      number /= 10;
+    }
+    return ArrayListIntegerToArrayInt(digits);
+  }
   /**
    * Counts the sum of digits of a given number.
    * @param number number.
@@ -128,6 +142,29 @@ public class NumberUtils {
   }
 
   /**
+   * Performs power operation on integer numbers in factorized form.
+   * @param base base in factorized form. Use primeFactorization()
+   * @param exponent exponent.
+   * @return number in factorized form.
+   */
+  public static int[] factorizedPow(int[] base, int exponent) {
+    int[] result = new int[base.length];
+    for (int i = 0; i < base.length; i++) {
+      result[i] = base[i] * exponent;
+    }
+    return result;
+  }
+
+  public static int factorizedGet(int[] number, int[] primes) {
+    int result = 0;
+    for (int i = 0; i < number.length; i++) {
+      if (number[i] > 0) {
+        result += Math.pow(primes[i], number[i]);
+      }
+    }
+    return result;
+  }
+  /**
    * Finds all proper divisors and one.
    * @param number number to find divisors of.
    * @param primes array of precomputed primes.
@@ -162,6 +199,27 @@ public class NumberUtils {
     return ArrayListIntegerToArrayInt(result);
   }
 
+  /**
+   * Performs power operation on integers.
+   * @param base base.
+   * @param exponent exponent.
+   * @return result.
+   */
+  public static int pow(int base, int exponent) {
+    if (exponent == 0) {
+      return 1;
+    }
+    if (exponent == 1) {
+      return base;
+    }
+    if (exponent % 2 == 0) {
+      int result = pow(base, exponent / 2);
+      return result * result;
+    } else {
+      int result = pow(base, exponent / 2);
+      return result * result * base;
+    }
+  }
   /**
    * Sums all elements of an array
    * @param array array.
