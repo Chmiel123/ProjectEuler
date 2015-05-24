@@ -15,14 +15,14 @@ public class Problem026 {
     int cycle;
     for (int i = 2; i < TARGET; i++) {
       cycle = lengthReciprocalCycle(1, i);
-      System.out.println(i+": "+cycle);
+//      System.out.println(i+": "+cycle);
       if (cycle > foundCycle) {
         foundCycle = cycle;
         foundI = i;
       }
 
     }
-    System.out.println(foundI+": "+foundCycle);
+    System.out.println("1/"+foundI+" has a reciprocal cycle lenght of: "+foundCycle);
   }
 
   public static int lengthReciprocalCycle (int nominator, int denominator) {

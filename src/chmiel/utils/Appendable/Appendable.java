@@ -1,4 +1,4 @@
-package chmiel.utils;
+package chmiel.utils.Appendable;
 
 /**
  * Created by kuba on 10.02.15.

@@ -3,11 +3,15 @@ package chmiel.utils;
 import java.io.PrintStream;
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by kuba on 10.02.15.
  */
 public class NumberUtils {
+
+  public static final String ERROR_TOO_FEW_PRIMES_COMPUTED = "ERROR: too few primes computed.";
+
   /**
    * Prints all array elements in one line.
    * @param array array to print elements of.
@@ -31,6 +35,20 @@ public class NumberUtils {
       number /= 10;
     }
     return ArrayListIntegerToArrayInt(digits);
+  }
+
+  /**
+   * Get the number of decimal digits of a number.
+   * @param number number.
+   * @return number of digits.
+   */
+  public static int getNumDigits(int number) {
+    int result = 0;
+    while (number > 0) {
+      result++;
+      number /= 10;
+    }
+    return result;
   }
   /**
    * Counts the sum of digits of a given number.
@@ -91,6 +109,20 @@ public class NumberUtils {
   }
 
   /**
+   * Checks a pre computed prime table to see if tested number is a prime.
+   * @param primes precomputed table of primes. See: setupPrimes().
+   * @param testedNumber number to test is a prime.
+   * @return wheter tested number is prime. False if there is not enough precomputed primes.
+   */
+  public static boolean isPrime(int[] primes, int testedNumber) {
+    if (primes[primes.length - 1] < testedNumber) {
+      System.err.println(ERROR_TOO_FEW_PRIMES_COMPUTED);
+      return false;
+    }
+    return (Arrays.binarySearch(primes, testedNumber) >= 0);
+  }
+
+  /**
    * Utility method to turn an ArrayList of Integers to plain array of ints.
    * @param arrayList arrayList of Integers.
    * @return array of ints.
@@ -118,13 +150,13 @@ public class NumberUtils {
   /**
    * Does prime factorization using prievously setup prime array.
    * @param number number to factorize.
-   * @param primes array of precomputet primes. Largest prime <= sqrt(number).
+   * @param primes array of precomputed primes. Largest prime <= sqrt(number).
    * @return array of exponents of each prime in primes.
    */
   public static int[] primeFactorization(int number, int[] primes) {
     int[] primesExponents = new int[primes.length];
     if (primes[primes.length-1]*primes[primes.length-1] < number) {
-      System.out.println("ERROR: too few primes computed.");
+      System.err.println(ERROR_TOO_FEW_PRIMES_COMPUTED);
       return primesExponents;
     }
 //    System.out.println("Number " + number + " =");
@@ -231,5 +263,18 @@ public class NumberUtils {
       sum += i;
     }
     return sum;
+  }
+
+  /**
+   * Finds greatest common divisor of numbers a and b.
+   * @param a number.
+   * @param b number.
+   * @return greatest common divisor of both numbers.
+   */
+  public static int gcd(int a, int b) {
+    if (b == 0) {
+      return a;
+    }
+    return gcd(b, a%b);
   }
 }

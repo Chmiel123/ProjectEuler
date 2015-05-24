@@ -1,8 +1,8 @@
 package chmiel.problems;
 
-import chmiel.utils.Appendable;
-import chmiel.utils.IntAppend;
-import chmiel.utils.StringAppend;
+import chmiel.utils.Appendable.Appendable;
+import chmiel.utils.Appendable.IntAppend;
+import chmiel.utils.Appendable.StringAppend;
 
 /**
  * Created by kuba on 10.02.15.
@@ -83,6 +83,7 @@ public class Problem017 {
    * @return int the count of letters in a written English representation.
    */
   private static int intToLetterCountEnglishNumeral(int number) {
+    //noinspection ConstantConditions
     return (Integer)intToObjectEnglishNumeral(number, new IntAppend(), letterCountNumerals);
   }
 

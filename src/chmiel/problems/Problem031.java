@@ -1,16 +1,24 @@
 package chmiel.problems;
 
+import chmiel.utils.OutputUtils;
+
 /**
  * Created by Kuba on 2015-03-05.
  */
 public class Problem031 {
 
-  public static final int TARGET = 200;
+  public static final int TARGET = 1000;
   private static int[] coins = new int[]{1, 2, 5, 10, 20, 50, 100, 200};
   private static long[] permutations = new long[TARGET + 1];
 
   public static void main(String[] args) {
+    long tStart = System.nanoTime();
+
     System.out.println(coinPermutations(TARGET));
+
+    long tEnd = System.nanoTime();
+    System.out.println(OutputUtils.timeDiff(tEnd, tStart));
+
   }
 
   private static long coinPermutations(int cents) {
@@ -39,7 +47,7 @@ public class Problem031 {
       System.exit(-1);
     }
     //permutations[cents] = permutations;
-    System.out.println(cents + ": " + permutations);
+//    System.out.println(cents + ": " + permutations);
 
     return permutations;
   }

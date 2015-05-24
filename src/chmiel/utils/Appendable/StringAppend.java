@@ -1,6 +1,4 @@
-package chmiel.utils;
-
-import java.lang.*;
+package chmiel.utils.Appendable;
 
 /**
  * Created by kuba on 10.02.15.
