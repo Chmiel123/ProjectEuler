@@ -12,7 +12,7 @@ public class Problem034 {
 
     //50 000 is enough
     //noinspection InfiniteLoopStatement
-    while (true) {
+    while (number < 50000) {
       number++;
       long factorialSum = 0;
       int[] digits = NumberUtils.getDigits(number);

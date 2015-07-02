@@ -14,9 +14,11 @@ public class NumberUtils {
 
   /**
    * Prints all array elements in one line.
+   * @deprecated Functionality moved to {@link ArrayUtils} class.
    * @param array array to print elements of.
    * @param out printstream to print to.
    */
+  @Deprecated
   public static void printArray(int[] array, PrintStream out) {
     for (int i = 0; i < array.length; i++) {
       out.print(array[i]+", ");
@@ -33,6 +35,20 @@ public class NumberUtils {
     while (number > 0) {
       digits.add(number % 10);
       number /= 10;
+    }
+    return ArrayListIntegerToArrayInt(digits);
+  }
+  /**
+   * Get an array of digits of a number in a specified base.
+   * @param number number.
+   * @param base base.
+   * @return array of digits.
+   */
+  public static int[] getDigits(int number, int base) {
+    ArrayList<Integer> digits = new ArrayList<Integer>();
+    while (number > 0) {
+      digits.add(number % base);
+      number /= base;
     }
     return ArrayListIntegerToArrayInt(digits);
   }

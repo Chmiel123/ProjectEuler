@@ -7,8 +7,6 @@ public class Problem015 {
   public static final int GRID_SIZE = 20;
 
   public static void main(String[] args) {
-    System.out.println("ABc");
-
     long[][] pathCost = new long[GRID_SIZE + 1][GRID_SIZE + 1];
     for (int i = 1; i < pathCost.length; i++) {
       pathCost[0][i] = 1;
