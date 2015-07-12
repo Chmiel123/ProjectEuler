@@ -14,7 +14,6 @@ public class Problem014 {
   private static long biggestNumberInAnySequence = 0;
 
   public static void main(String[] args) {
-    long startTime = System.nanoTime();
     //setup start numbers of a 1 000 000 or so collatz sequences.
     for (int i = 0; i < currentCollatzTermOfNumber.length; i++) {
       currentCollatzTermOfNumber[i] = i;
@@ -45,11 +44,8 @@ public class Problem014 {
         startingNumberOfMaxChain = i;
       }
     }
-    System.out.println("Starting number "+startingNumberOfMaxChain+" produces a chain of "+maxChain);
-
-    long stopTime = System.nanoTime();
-    long elapsedTime = stopTime - startTime;
-    System.out.println("Time: "+(elapsedTime/1000000000.0)+" seconds.");
+//    System.out.println("Starting number "+startingNumberOfMaxChain+" produces a chain of "+maxChain);
+    System.out.println(startingNumberOfMaxChain);
   }
 
 //  public static int collatzChain(long n) {

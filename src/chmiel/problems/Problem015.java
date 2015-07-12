@@ -17,7 +17,8 @@ public class Problem015 {
         pathCost[i][j] = pathCost[i-1][j] + pathCost[i][j-1];
       }
     }
-    System.out.println(arrayToString(pathCost));
+    //System.out.println(arrayToString(pathCost));
+    System.out.println(pathCost[pathCost.length - 1][pathCost[pathCost.length - 1].length - 1]);
   }
 
   public static String arrayToString(long[][] array) {

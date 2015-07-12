@@ -12,12 +12,10 @@ public class Problem023 {
   private static final int TARGET = 28123;
 
   public static void main(String[] args) {
-    long timeStart = System.nanoTime();
-
     int[] primes = NumberUtils.setupPrimes(TARGET);
     
     //find all abundant numbers less than TARGET
-    ArrayList<Integer> abundants = new ArrayList<Integer>();
+    ArrayList<Integer> abundants = new ArrayList<>();
     for (int n = SMALLES_ABUNDANT_NUMBER; n < TARGET; n++) {
       if (NumberUtils.sumOfArrayElements(NumberUtils.findDivisorsByPrimeFactorization(n, primes)) > n) {
         abundants.add(n);
@@ -44,7 +42,6 @@ public class Problem023 {
     for (int i = 1; i < isSumOfAbundantNumbers.length; i++) {
       if (isSumOfAbundantNumbers[i]) {
         sum += i;
-        lastN = i;
       }
     }
 //    for (int n = 1; n <= TARGET; n++) {
@@ -53,10 +50,8 @@ public class Problem023 {
 //        lastN = n;
 //      }
 //    }
-    long timeEnd = System.nanoTime();
-    System.out.println("Biggest number: "+lastN);
-    System.out.println("Sum: "+sum);
-    System.out.println("Time: "+ ((timeEnd-timeStart)/1000000000.0));
+//    System.out.println("Biggest number: "+lastN);
+    System.out.println(sum);
   }
 
   public static boolean isSumOfTwoNumbers(int n, int[] possibleSummands) {

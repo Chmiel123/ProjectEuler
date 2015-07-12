@@ -18,6 +18,7 @@ public class Problem013 {
 //      System.out.println(bInt);
       sum = sum.add(bInt);
     }
-    System.out.println(sum);
+    System.out.println(sum.toString().substring(0, 10));
+    //System.out.println(sum);
   }
 }

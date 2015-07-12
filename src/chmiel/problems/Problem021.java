@@ -33,7 +33,7 @@ public class Problem021 {
         }
       } else  if (nextIndex >= sumOfDivisors.length) {
         //next number is greater than TARGET
-        System.out.println("too big: "+nextIndex);
+        //System.out.println("too big: "+nextIndex);
         if (number == sumOfArrayElements(NumberUtils.findDivisorsByPrimeFactorization(nextIndex, primes))) {
           //amicable number
           sumOfAmicableNumbers += number;

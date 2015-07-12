@@ -13,13 +13,13 @@ public class Problem024 {
 
 
   public static void main(String[] args) {
-    ArrayList<Long> permutations = new ArrayList<Long>();
+    ArrayList<Long> permutations = new ArrayList<>();
     addIntPermutationsToArrayList(permutations);
     long[] perm = NumberUtils.ArrayListLongToArrayLong(permutations);
-    System.out.println(perm.length);
+//    System.out.println(perm.length);
     System.out.println(perm[TARGET - 1]);
-    Arrays.sort(perm);
-    System.out.println(perm[TARGET - 1]);
+//    Arrays.sort(perm);
+//    System.out.println(perm[TARGET - 1]);
   }
 
 

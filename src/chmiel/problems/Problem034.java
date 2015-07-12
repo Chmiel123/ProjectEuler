@@ -21,9 +21,10 @@ public class Problem034 {
       }
       if (factorialSum == number) {
         sum += number;
-        System.out.println("+" + number + " sum: " + sum);
+        //System.out.println("+" + number + " sum: " + sum);
       }
     }
+    System.out.println(sum);
   }
 
   public static long simpleFactorial (long n) {

@@ -20,11 +20,11 @@ public class Problem030 {
       }
       int digitsSum = NumberUtils.sumOfArrayElements(digits);
       if (digitsSum == i) {
-        System.out.println(i);
+        //System.out.println(i);
         sum += i;
       }
     }
-    System.out.println();
+    //System.out.println();
     System.out.println(sum);
   }
 

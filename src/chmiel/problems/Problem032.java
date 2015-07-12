@@ -14,15 +14,10 @@ public class Problem032 {
   private static final int TARGET_DIGIT_NUM = 9;
 
   public static void main(String[] args) {
-    long ts = System.nanoTime();
-
 //    System.out.println(checkPandigital(39, 186)+" should be 7254);
-    ArrayList<Integer> results = new ArrayList<Integer>();
+    ArrayList<Integer> results = new ArrayList<>();
     int resultSum = 0;
     for (int i = 1; i < MAX_MULTIPLIER; i++) {
-      if (i % 1000000 == 0) {
-        System.out.println((i / 1000000) + "mil");
-      }
       int iDigitN = NumberUtils.getNumDigits(i);
       for (int j = i; j < MAX_MULTIPLIER; j++) {
         int jDigitN = NumberUtils.getNumDigits(j);
@@ -44,14 +39,7 @@ public class Problem032 {
         }
       }
     }
-
-    long tf = System.nanoTime();
-    System.out.println("      Results:");
-    for (Integer res : results) {
-      System.out.println(res);
-    }
-    System.out.println("Sum: " + resultSum);
-    System.out.println("Time taken: " + OutputUtils.timeDiff(ts, tf) + "s");
+    System.out.println(resultSum);
   }
 
 

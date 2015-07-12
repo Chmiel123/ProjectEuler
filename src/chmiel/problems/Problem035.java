@@ -15,12 +15,11 @@ public class Problem035 {
   private static int[] circularAndPrime;
 
   public static void main(String[] args) {
-    primes = NumberUtils.setupPrimes(TARGET);
+    primes = NumberUtils.setupPrimes(TARGET*2);
     circularAndPrime = new int[TARGET];
     int sum = 0;
 
     for (int i = 2; i < circularAndPrime.length; i++) {
-      //System.out.println(circularAndPrime[i]);
       int number = i;
       boolean areAllPrimes = true;
       do {
@@ -30,11 +29,10 @@ public class Problem035 {
         number = nextCircular(number);
       } while (number != i);
       if (areAllPrimes) {
-        System.out.println(number);
         sum++;
       }
     }
-    System.out.println("Sum: "+sum);
+    System.out.println(sum);
   }
 
   private static int nextCircular(int number) {

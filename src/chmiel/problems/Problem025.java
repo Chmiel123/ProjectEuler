@@ -21,8 +21,8 @@ public class Problem025 {
       fibCurr = fibLast.add(fibCurr);
       fibLast = swap;
     }
-    System.out.println(target);
-    System.out.println(fibCurr);
-    System.out.println("Answer: "+index);
+    //System.out.println(target);
+    //System.out.println(fibCurr);
+    System.out.println(index);
   }
 }

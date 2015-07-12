@@ -19,6 +19,7 @@ public class Problem016 {
       digit = st.charAt(i);
       sum += (int)digit - 48;
     }
-    System.out.println("2^"+EXP+" =\n"+st+"\nSum of digits is "+sum);
+//    System.out.println("2^"+EXP+" =\n"+st+"\nSum of digits is "+sum);
+    System.out.println(sum);
   }
 }

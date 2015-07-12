@@ -16,7 +16,7 @@ public class Problem029 {
 
   public static void main(String[] args) {
     int[] primes = NumberUtils.setupPrimes(A_MAX + 1);
-    ArrayList<int[]> distinctPowers = new ArrayList<int[]>();
+    ArrayList<int[]> distinctPowers = new ArrayList<>();
 
     for (int a = A_MIN; a <= A_MAX; a++) {
       int[] primeExponentForm = NumberUtils.primeFactorization(a, primes);
@@ -41,6 +41,6 @@ public class Problem029 {
 //    }
 //    System.out.println(distinctPowers);
 
-    System.out.println("Nr of terms: " + distinctPowers.size());
+    System.out.println(distinctPowers.size());
   }
 }

@@ -29,9 +29,9 @@ public class Problem027 {
         }
       }
     }
-    System.out.println("Polynomial: x^2 + " + maxCoefs[1] + "x + " + maxCoefs[0]);
-    System.out.println("produces a chain of primes of length: "+maxLength);
-    System.out.println("Product of coefficients: "+ (maxCoefs[0] * maxCoefs[1]));
+    //System.out.println("Polynomial: x^2 + " + maxCoefs[1] + "x + " + maxCoefs[0]);
+    //System.out.println("produces a chain of primes of length: "+maxLength);
+    System.out.println((maxCoefs[0] * maxCoefs[1]));
   }
 
 

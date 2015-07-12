@@ -39,12 +39,12 @@ public class Problem033 {
         }
         Fraction realSimplified = new Fraction(nom, denom);
         if (realSimplified.equals(badSimplified)) {
-          System.out.println(realSimplified + " -> " + badSimplified);
+          //System.out.println(realSimplified + " -> " + badSimplified);
           product = product.multiply(realSimplified);
         }
 
       }
     }
-    System.out.println("Product: "+product);
+    System.out.println(product.getDenominator());
   }
 }

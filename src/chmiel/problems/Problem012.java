@@ -31,7 +31,7 @@ public class Problem012 {
       triangleNumber += number;
       nrDivisors = nDivisors(triangleNumber);
     }
-    System.out.println("Wynik: "+triangleNumber);
+    System.out.println(triangleNumber);
   }
 
   /**

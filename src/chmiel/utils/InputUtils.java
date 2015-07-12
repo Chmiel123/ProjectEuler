@@ -14,9 +14,13 @@ public class InputUtils {
       System.out.println("Input file not specified.");
       System.exit(-1);
     }
+    return getInputFile(args[0]);
+  }
+
+  public static Scanner getInputFile(String filename) {
     Scanner scan = null;
     try {
-      scan = new Scanner(new File(args[0]));
+      scan = new Scanner(new File(filename));
     } catch (FileNotFoundException e) {
       e.printStackTrace();
       System.exit(-1);

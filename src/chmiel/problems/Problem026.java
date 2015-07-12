@@ -22,12 +22,13 @@ public class Problem026 {
       }
 
     }
-    System.out.println("1/"+foundI+" has a reciprocal cycle lenght of: "+foundCycle);
+//    System.out.println("1/"+foundI+" has a reciprocal cycle lenght of: "+foundCycle);
+    System.out.println(foundI);
   }
 
   public static int lengthReciprocalCycle (int nominator, int denominator) {
-    ArrayList<Integer> remainders = new ArrayList<Integer>();
-    ArrayList<Integer> result = new ArrayList<Integer>();
+    ArrayList<Integer> remainders = new ArrayList<>();
+    ArrayList<Integer> result = new ArrayList<>();
 
     int index = 0;
     int foundIndex;

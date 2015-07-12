@@ -9,6 +9,7 @@ import java.util.Scanner;
  * Created by kuba on 14.02.15.
  */
 public class Problem022 {
+
   public static void main(String[] args) {
     Scanner scan = InputUtils.getInputFile(args);
 
