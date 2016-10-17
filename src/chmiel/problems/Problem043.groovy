@@ -1,7 +1,6 @@
 package chmiel.problems
 
-import chmiel.utils.Digits
-import chmiel.utils.RuntimeUtils
+import chmiel.utils.*
 
 RuntimeUtils.showExecutionTime()
 

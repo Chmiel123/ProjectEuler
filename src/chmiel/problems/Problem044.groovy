@@ -1,21 +1,8 @@
 package chmiel.problems
 
-import chmiel.utils.RuntimeUtils
+import chmiel.utils.*
 
 RuntimeUtils.showExecutionTime()
-
-long pentagonal(long n) {
-  return n*(3*n-1)/2
-}
-boolean isPentagonal(long n) {
-  isWhole((Math.sqrt(24*n+1)+1)/6)
-}
-boolean isWhole(double n) {
-  n == (double)((long)n)
-}
-boolean isSqare(long n) {
-  isWhole(Math.sqrt(n))
-}
 
 maxI = 1500
 foundD = Integer.MAX_VALUE
@@ -24,9 +11,9 @@ foundD = Integer.MAX_VALUE
 for (int i = 1; i <= maxI; i++) {
   for (int di = 1; di <= maxI; di++) {
     j = i + di
-    pi = pentagonal(i)
-    pj = pentagonal(j)
-    if (! isPentagonal(pi+pj) || !isPentagonal(pj-pi)) {
+    pi = Numbers.pentagonal(i)
+    pj = Numbers.pentagonal(j)
+    if (! Numbers.isPentagonal(pi+pj) || ! Numbers.isPentagonal(pj-pi)) {
       continue
     }
     if (pj-pi < foundD) {
