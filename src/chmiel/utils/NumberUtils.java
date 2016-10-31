@@ -11,7 +11,16 @@ import java.util.Arrays;
 public class NumberUtils {
 
   public static final String ERROR_TOO_FEW_PRIMES_COMPUTED = "ERROR: too few primes computed.";
-
+  private static int errorCount = 0;
+  private static final int maxErrorCount = 10;
+  
+  private static void error(String errorMessage) {
+    if (errorCount < maxErrorCount) {
+      System.err.println(errorMessage);
+      errorCount++;
+    }
+  }
+  
   /**
    * Prints all array elements in one line.
    * @deprecated Functionality moved to {@link ArrayUtils} class.
@@ -132,7 +141,7 @@ public class NumberUtils {
    */
   public static boolean isPrime(int[] primes, int testedNumber) {
     if (primes[primes.length - 1] < testedNumber) {
-      System.err.println(ERROR_TOO_FEW_PRIMES_COMPUTED);
+      error(ERROR_TOO_FEW_PRIMES_COMPUTED);
       return false;
     }
     return (Arrays.binarySearch(primes, testedNumber) >= 0);
@@ -172,7 +181,7 @@ public class NumberUtils {
   public static int[] primeFactorization(int number, int[] primes) {
     int[] primesExponents = new int[primes.length];
     if (primes[primes.length-1]*primes[primes.length-1] < number) {
-      System.err.println(ERROR_TOO_FEW_PRIMES_COMPUTED);
+      error(ERROR_TOO_FEW_PRIMES_COMPUTED);
       return primesExponents;
     }
 //    System.out.println("Number " + number + " =");

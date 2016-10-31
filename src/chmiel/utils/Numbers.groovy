@@ -32,4 +32,12 @@ class Numbers {
   static boolean isSqare(long n) {
     isWhole(Math.sqrt(n))
   }
+  
+  
+  static boolean isPrime(primes, testedNumber) {
+    if (primes.last() < testedNumber) {
+      return false //System.err.println("Too few primes")
+    }
+    return (primes.find {it == testedNumber} != null);
+  }
 }
