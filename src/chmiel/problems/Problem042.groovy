@@ -1,6 +1,6 @@
 package chmiel.problems
 
-input = new File("../../../inputs/P_042.txt").text
+input = new File("../inputs/P_042.txt").text
 input = input.replace("\"", "")
 words = input.split(",")
 
