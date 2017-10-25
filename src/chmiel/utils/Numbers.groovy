@@ -40,4 +40,13 @@ class Numbers {
     }
     return (primes.find {it == testedNumber} != null);
   }
+  static BigInteger factorial(number) {
+    if (number < 0)
+      return -1
+    if (number == 0)
+      return 1
+    (1..number).inject(1) {result, next ->
+      result *= next
+    }
+  }
 }
