@@ -6,7 +6,7 @@ class Digits {
      * @param number number.
      * @return array of digits.
      */
-    static int[] getDigits(long number) {
+    static int[] getDigits(BigInteger number) {
         getDigits(number, 10)
     }
     /**
@@ -15,7 +15,7 @@ class Digits {
      * @param base base.
      * @return array of digits.
      */
-    static int[] getDigits(long number, int base) {
+    static int[] getDigits(BigInteger number, BigInteger base) {
         def digits = []
         while (number > 0) {
             digits << number % base
@@ -28,8 +28,8 @@ class Digits {
      * @param digits list of digits
      * @return number
      */
-    static int glueDigits(List<Integer> digits) {
-        def result = 0
+    static BigInteger glueDigits(List<BigInteger> digits) {
+        def BigInteger result = 0
         digits.each {
             result *= 10
             result += it
