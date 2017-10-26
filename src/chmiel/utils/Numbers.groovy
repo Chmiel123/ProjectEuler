@@ -49,4 +49,11 @@ class Numbers {
       result *= next
     }
   }
+  
+  public static BigInteger gcd(BigInteger a, BigInteger b) {
+    if (b == 0) {
+      return a;
+    }
+    return gcd(b, a%b);
+  }
 }
